@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lämpotilamuunnin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <h1 id="header">Lämpotilamuunnin</h1>
+
+    <form id="tempForm" action="#">
+        <select id="tempConv">
+            <option value="toFahrenheit">Celcius -> Fahrenheit</option>
+            <option value="toCelcius">Fahrenheit -> Celcius</option>
+        </select>
+
+        <p>Syötä lämpötila:</p>
+        <input type="text" id="tempInput" placeholder="" />
+
+        <button type="button" onclick="tempCheck()">
+            <i class=""></i> Muunna
+        </button>
+
+        <ul id="tempDecimals">
+            <li><input type="radio" name="decimal" value="1" checked="checked">1 desimaali</li>
+            <li><input type="radio" name="decimal" value="2">2 desimaalia</li>
+            <li><input type="radio" name="decimal" value="3">3 desimaalia</li>
+        </ul>
+
+    </form>
+    <br>
+    <div id="output"></div>
+
+
+
+</body>
+
+</html>
